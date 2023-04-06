@@ -47,7 +47,6 @@ const Single = (props) => {
             alt=""
           />
           <div className={classes.user}>
-            {/* {post.userImg && <img src={post.userImg} alt="" />} */}
             <div className={classes.info}>
               <span>{props?.post?.author}</span>
               <p>{props?.post?.date}</p>
@@ -56,7 +55,7 @@ const Single = (props) => {
             {showIcons && (
               <div className={classes.edit}>
                 <Link
-                  href={`/write?edit=${props?.id}&title=${props?.post?.title}&desc=${props?.post?.desc}`}
+                  href={`/write?edit=${props?.id}&title=${props?.post?.title}&desc=${props?.post?.desc}&img=${props?.post?.img}`}
                   as="/write"
                 >
                   <img src={Edit.src} alt="" />
