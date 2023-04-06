@@ -15,6 +15,7 @@ const Write = () => {
   const editTitle = router.query.title;
   const editId = router.query.edit;
   const editDesc = router.query.desc;
+  const editImg = router.query.img;
 
   if (!auth.currentUser) router.push("/login");
 
@@ -67,7 +68,7 @@ const Write = () => {
         {
           title: title,
           desc: value,
-          img: "",
+          img: editImg,
         },
         { merge: true }
       ).then(router.push("/post/" + editId));

@@ -11,6 +11,7 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
+  const [shortPassword, setShortPassword] = useState(false);
 
   const registerUser = (e) => {
     e.preventDefault();
@@ -18,13 +19,15 @@ const Register = () => {
       setError(true);
       return;
     }
+    if (password.length < 7) {
+      setShortPassword(true);
+    }
 
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
         console.log(user);
-
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -68,6 +71,7 @@ const Register = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
         {error && <p>Please fill in all fields</p>}
+        {shortPassword && <p>Your password must be longer than 7 characters</p>}
         <button type="submit">Register</button>
         <span>
           Do you have an account? <Link href="/login">Login</Link>
