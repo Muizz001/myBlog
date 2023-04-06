@@ -32,3 +32,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Register or Login
+
+To register go to `http://localhost:3000/register` and `http://localhost:3000/login` to login also. You will be asked to login or register with email, username and password and then redirected to the home page
+
+## Homepage
+
+The home page consists of all the previous blog posts and a navbar that's globally available in the app with a functioning searchbar and links to the createpost page and a logout or login link and the current user's username  
