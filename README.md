@@ -40,3 +40,15 @@ To register go to `http://localhost:3000/register` and `http://localhost:3000/lo
 ## Homepage
 
 The home page consists of all the previous blog posts and a navbar that's globally available in the app with a functioning searchbar and links to the createpost page and a logout or login link and the current user's username  
+
+## Postpage
+
+The post page can be accessed by clicking on the post title on the homepage or the read more button and then be redirected to the `post/[id]` page containing the ID of the post. The post page also has a fully functioning delete and edit post buttons thta can be used by the author of the post or the admin and a fully functioning comment section that allows logged in users to post comments and non-logged in users to view comments alone.
+
+## CreatePostpage
+
+The create post page can be accessed by going to `http://localhost:3000/write` or by clicking on the write button on the navbar. It uses react quill as a text editor and allows users to ad post title, content and an optional picture. On publishing the author is returned back to the HomePage.
+
+## Backend
+
+This whole app is powered by firebase from authentication to the database.
