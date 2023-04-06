@@ -1,0 +1,98 @@
+.single {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+.user span {
+  font-weight: bold;
+}
+
+.edit {
+  display: flex;
+  gap: 5px;
+}
+
+.edit img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.content h1 {
+  font-size: 42px;
+  color: #333;
+}
+
+.content p {
+  text-align: justify;
+  line-height: 30px;
+}
+
+.single form {
+  flex: 1;
+  height: 70px;
+  display: flex;
+  gap: 10px;
+}
+
+.single form input {
+  width: 70%;
+  height: 100%;
+  padding: 10px 5px;
+  border: rgb(128, 128, 128, 0.3) 1px solid;
+  border-radius: 4px;
+}
+.single form button {
+  width: max-content;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid teal;
+  color: teal;
+}
+.single form button:hover {
+  border: 1px solid white;
+  background-color: #b9e7e7;
+  color: black;
+}
+
+.single form input:active,
+.single form input:focus {
+  border: rgb(128, 128, 128, 0.8) 1px solid;
+}
+
+.comment {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: rgb(128, 128, 128, 0.3) 1px solid;
+  padding: 10px 0;
+}
+
+.commentinfo {
+  color: rgb(128, 128, 128, 0.8);
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+}
